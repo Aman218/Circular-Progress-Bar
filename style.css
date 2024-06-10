@@ -1,0 +1,47 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.circle{
+    width: 18%;
+    height: 30vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    align-items: center;
+
+    background-image: conic-gradient(var(--color) calc(var(--percentage)*1%),#ffffff 0%);
+}
+.circle2,.circle3{
+    background-image: conic-gradient(var(--color) calc(var(--percentage)*1%),#ffffff 0%);
+}
+.metric{
+    font-size: 1.5rem;
+    z-index: 96;
+    color: whitesmoke;
+    font-weight: 700;
+}
+.circle::before{
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border-radius: 50%;
+    background-color: #222;
+  
+   
+    
+}
+
